@@ -2,16 +2,9 @@ package com.makiia.modules.bus.services;
 
 import com.makiia.crosscutting.domain.enums.ProcessName;
 import com.makiia.crosscutting.domain.enums.Status;
-<<<<<<< HEAD
+
 import com.makiia.crosscutting.domain.model.EntyRecmaesusuarimaDto;
-import com.makiia.crosscutting.domain.model.EntyRecmaetarivalorDto;
-=======
-<<<<<<< HEAD
-import com.makiia.crosscutting.domain.model.EntyRecmaesusuarimaDto;
-import com.makiia.crosscutting.domain.model.EntyRecmaetarivalorDto;
-=======
->>>>>>> 1db9f2b (primer commit)
->>>>>>> 4129511 (primer commit)
+
 import com.makiia.crosscutting.domain.model.traceability.TransactionFile;
 import com.makiia.crosscutting.exceptions.ExceptionBuilder;
 import com.makiia.crosscutting.exceptions.Main.EBusinessException;

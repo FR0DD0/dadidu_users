@@ -104,117 +104,6 @@ public class JpaEntyRecmaesusuarimaDataProviders implements IjpaEntyRecmaesusuar
             EntyRecmaesusuarima entity = dtoToEntityTranslate.translate(dto);
             EntyRecmaesusuarima old = repository.findById(id).get();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4129511 (primer commit)
-            old.setRec_nroreg_reus(
-                    Objects.nonNull(dto.getRec_nroreg_reus()) && !entity.getRec_nroreg_reus().isEmpty()
-                    ? entity.getRec_nroreg_reus()
-                    : old.getRec_nroreg_reus());
-            old.setRec_niknam_reus(
-                    Objects.nonNull(dto.getRec_niknam_reus()) && !entity.getRec_niknam_reus().isEmpty()
-                            ? entity.getRec_niknam_reus()
-                            : old.getRec_niknam_reus());
-            old.setRec_nroide_reus(
-                    Objects.nonNull(dto.getRec_nroide_reus()) && !entity.getRec_nroide_reus().equals(0)
-                            ? entity.getRec_nroide_reus()
-                            : old.getRec_nroide_reus());
-            old.setRec_nombre_reus(
-                    Objects.nonNull(dto.getRec_nombre_reus()) && !entity.getRec_nombre_reus().isEmpty()
-                            ? entity.getRec_nombre_reus()
-                            : old.getRec_nombre_reus());
-            old.setRec_apelid_reus(
-                    Objects.nonNull(dto.getRec_apelid_reus()) && !entity.getRec_apelid_reus().isEmpty()
-                            ? entity.getRec_apelid_reus()
-                            : old.getRec_apelid_reus());
-            old.setRec_fecnac_reus(
-                    Objects.nonNull(dto.getRec_fecnac_reus()) && !entity.getRec_fecnac_reus().isEmpty()
-                            ? entity.getRec_fecnac_reus()
-                            : old.getRec_fecnac_reus());
-            old.setRec_sexusu_reus(
-                    Objects.nonNull(dto.getRec_sexusu_reus()) && !entity.getRec_sexusu_reus().isEmpty()
-                            ? entity.getRec_sexusu_reus()
-                            : old.getRec_sexusu_reus());
-            old.setRec_nomusu_reus(
-                    Objects.nonNull(dto.getRec_nomusu_reus()) && !entity.getRec_nomusu_reus().isEmpty()
-                            ? entity.getRec_nomusu_reus()
-                            : old.getRec_nomusu_reus());
-            old.setRec_imgvis_reus(
-                    Objects.nonNull(dto.getRec_imgvis_reus()) && !entity.getRec_imgvis_reus().isEmpty()
-                            ? entity.getRec_imgvis_reus()
-                            : old.getRec_imgvis_reus());
-            old.setRec_dirres_reus(
-                    Objects.nonNull(dto.getRec_dirres_reus()) && !entity.getRec_dirres_reus().isEmpty()
-                            ? entity.getRec_dirres_reus()
-                            : old.getRec_dirres_reus());
-            old.setRec_telefo_reus(
-                    Objects.nonNull(dto.getRec_telefo_reus()) && !entity.getRec_telefo_reus().isEmpty()
-                            ? entity.getRec_telefo_reus()
-                            : old.getRec_telefo_reus());
-            old.setApj_correo_apgm(
-                    Objects.nonNull(dto.getApj_correo_apgm()) && !entity.getApj_correo_apgm().isEmpty()
-                            ? entity.getApj_correo_apgm()
-                            : old.getApj_correo_apgm());
-            old.setSis_codpai_sipa(
-                    Objects.nonNull(dto.getSis_codpai_sipa()) && !entity.getSis_codpai_sipa().isEmpty()
-                            ? entity.getSis_codpai_sipa()
-                            : old.getSis_codpai_sipa());
-            old.setSis_idedpt_sidp(
-                    Objects.nonNull(dto.getSis_idedpt_sidp()) && !entity.getSis_idedpt_sidp().isEmpty()
-                            ? entity.getSis_idedpt_sidp()
-                            : old.getSis_idedpt_sidp());
-            old.setSis_codpro_sipr(
-                    Objects.nonNull(dto.getSis_codpro_sipr()) && !entity.getSis_codpro_sipr().isEmpty()
-                            ? entity.getSis_codpro_sipr()
-                            : old.getSis_codpro_sipr());
-            old.setRec_codpos_reus(
-                    Objects.nonNull(dto.getRec_codpos_reus()) && !entity.getRec_codpos_reus().isEmpty()
-                            ? entity.getRec_codpos_reus()
-                            : old.getRec_codpos_reus());
-            old.setRec_geolat_reus(
-                    Objects.nonNull(dto.getRec_geolat_reus()) && !entity.getRec_geolat_reus().equals(0)
-                            ? entity.getRec_geolat_reus()
-                            : old.getRec_geolat_reus());
-            old.setRec_geolon_reus(
-                    Objects.nonNull(dto.getRec_geolon_reus()) && !entity.getRec_geolon_reus().equals(0)
-                            ? entity.getRec_geolon_reus()
-                            : old.getRec_geolon_reus());
-            old.setRec_geolon_reus(
-                    Objects.nonNull(dto.getRec_geolon_reus()) && !entity.getRec_geolon_reus().equals(0)
-                            ? entity.getRec_geolon_reus()
-                            : old.getRec_geolon_reus());
-            old.setSis_counta_rkey(
-                    Objects.nonNull(dto.getSis_counta_rkey()) && !entity.getSis_counta_rkey().equals(0)
-                            ? entity.getSis_counta_rkey()
-                            : old.getSis_counta_rkey());
-            old.setSis_countb_rkey(
-                    Objects.nonNull(dto.getSis_countb_rkey()) && !entity.getSis_countb_rkey().equals(0)
-                            ? entity.getSis_countb_rkey()
-                            : old.getSis_countb_rkey());
-            old.setSis_countc_rkey(
-                    Objects.nonNull(dto.getSis_countc_rkey()) && !entity.getSis_countc_rkey().equals(0)
-                            ? entity.getSis_countc_rkey()
-                            : old.getSis_countc_rkey());
-            old.setSis_countd_rkey(
-                    Objects.nonNull(dto.getSis_countd_rkey()) && !entity.getSis_countd_rkey().equals(0)
-                            ? entity.getSis_countd_rkey()
-                            : old.getSis_countd_rkey());
-            old.setSis_counte_rkey(
-                    Objects.nonNull(dto.getSis_counte_rkey()) && !entity.getSis_counte_rkey().equals(0)
-                            ? entity.getSis_counte_rkey()
-                            : old.getSis_counte_rkey());
-            old.setSis_countf_rkey(
-                    Objects.nonNull(dto.getSis_countf_rkey()) && !entity.getSis_countf_rkey().equals(0)
-                            ? entity.getSis_countf_rkey()
-                            : old.getSis_countf_rkey());
-            old.setRec_estreg_reus(
-                    Objects.nonNull(dto.getRec_estreg_reus()) && !entity.getRec_estreg_reus().equals(0)
-                            ? entity.getRec_estreg_reus()
-                            : old.getRec_estreg_reus());
-<<<<<<< HEAD
-=======
-=======
             old.setRecNroregReus(
                     Objects.nonNull(dto.getRecNroregReus()) && !entity.getRecNroregReus().isEmpty()
                     ? entity.getRecNroregReus()
@@ -319,8 +208,7 @@ public class JpaEntyRecmaesusuarimaDataProviders implements IjpaEntyRecmaesusuar
                     Objects.nonNull(dto.getRecEstregReus()) && !entity.getRecEstregReus().equals(0)
                             ? entity.getRecEstregReus()
                             : old.getRecEstregReus());
->>>>>>> 1db9f2b (primer commit)
->>>>>>> 4129511 (primer commit)
+
             return  saveResponseTranslate.translate(repository.save(old));
 
         }catch (PersistenceException | DataAccessException e){

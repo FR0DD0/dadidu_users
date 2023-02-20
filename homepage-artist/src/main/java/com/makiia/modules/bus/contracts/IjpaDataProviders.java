@@ -1,13 +1,5 @@
 package com.makiia.modules.bus.contracts;
 
-<<<<<<< HEAD
-import com.makiia.crosscutting.domain.model.EntyRecmaetarivalorDto;
-=======
-<<<<<<< HEAD
-import com.makiia.crosscutting.domain.model.EntyRecmaetarivalorDto;
-=======
->>>>>>> 1db9f2b (primer commit)
->>>>>>> 4129511 (primer commit)
 import com.makiia.crosscutting.exceptions.Main.EBusinessException;
 
 import java.util.List;
